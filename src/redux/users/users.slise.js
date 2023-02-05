@@ -7,8 +7,15 @@ const usersSlice = createSlice({
     addUser(state, { payload }) {
       state.users.push(payload);
     },
-    removeUser(state, { payload }) {},
-    toggleStatus(state, { payload }) {},
+    removeUser(state, { payload }) {
+      const index = state.users.findIndex(user => user.id === payload);
+      state.users.splice(index, 1);
+    },
+    toggleStatus(state, { payload }) {
+      const index = state.users.findIndex(user => user.id === payload);
+      state.users[index].status =
+        state.users[index].status === 'online' ? 'ofline' : 'online';
+    },
   },
 });
 
