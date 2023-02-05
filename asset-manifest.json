@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/blandet4-3/static/css/main.6490a0b5.css",
-    "main.js": "/blandet4-3/static/js/main.30bd0dea.js",
+    "main.js": "/blandet4-3/static/js/main.89f0ebd6.js",
     "index.html": "/blandet4-3/index.html",
     "main.6490a0b5.css.map": "/blandet4-3/static/css/main.6490a0b5.css.map",
-    "main.30bd0dea.js.map": "/blandet4-3/static/js/main.30bd0dea.js.map"
+    "main.89f0ebd6.js.map": "/blandet4-3/static/js/main.89f0ebd6.js.map"
   },
   "entrypoints": [
     "static/css/main.6490a0b5.css",
-    "static/js/main.30bd0dea.js"
+    "static/js/main.89f0ebd6.js"
   ]
 }
