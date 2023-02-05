@@ -1,8 +1,12 @@
 import { nanoid } from '@reduxjs/toolkit';
 import { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { addUser } from 'redux/users/users.slise';
 import { getStatus } from 'services/statusApi.service';
 
 const AddUserPage = () => {
+  const dispatch = useDispatch();
+
   const [name, setName] = useState('');
   const [agg, setAgg] = useState('');
 
@@ -25,8 +29,9 @@ const AddUserPage = () => {
       agg,
       name,
       status,
-      id: nanoid,
+      id: nanoid(),
     };
+    dispatch(addUser(user));
     setAgg('');
     setName('');
   };
